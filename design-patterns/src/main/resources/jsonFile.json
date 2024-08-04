@@ -1,0 +1,22 @@
+{
+  "content": {
+    "people": [
+      {
+        "personalId": 1,
+        "name": "Alice",
+        "dateOfBirth": "10-04-1998",
+        "seniorityLevel": 3,
+        "isEmployed": true,
+        "yearsOfExperience": 2.4
+      },
+      {
+        "personalId": 2,
+        "name": "Bob",
+        "dateOfBirth": "09-12-1998",
+        "seniorityLevel": 2,
+        "isEmployed": false,
+        "yearsOfExperience": 1
+      }
+    ]
+  }
+}
