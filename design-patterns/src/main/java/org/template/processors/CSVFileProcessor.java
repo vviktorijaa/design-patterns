@@ -1,8 +1,15 @@
 package org.template.processors;
 
+import com.opencsv.bean.CsvToBeanBuilder;
 import org.template.FileProcessor;
+import org.template.model.FileContent;
+import org.template.model.PersonClass;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.util.List;
 
 public class CSVFileProcessor extends FileProcessor {
 
@@ -11,27 +18,24 @@ public class CSVFileProcessor extends FileProcessor {
     public CSVFileProcessor() {}
 
     @Override
-    public void openFile() {
-        try {
-
-        } catch (Exception ex) {
-            throw new RuntimeException("Error opening CSV file", ex);
-        }
-    }
+    public void openFile() {}
 
     @Override
     public void readFile(Path path) {
-        //don't forget to use the extension
+        try (BufferedReader reader = Files.newBufferedReader(path)) {
+            List<PersonClass> beans = new CsvToBeanBuilder<PersonClass>(reader)
+                    .withType(PersonClass.class)
+                    .build()
+                    .parse();
+
+            this.fileContent = new FileContent<>(beans);
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @Override
-    public void closeFile() {
-        try {
-
-        } catch (Exception ex) {
-            throw new RuntimeException("Error opening CSV file", ex);
-        }
-    }
+    public void closeFile() {}
 
     @Override
     public void getFileInformation() {

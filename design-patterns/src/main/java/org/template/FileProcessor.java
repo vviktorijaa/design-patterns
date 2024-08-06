@@ -16,6 +16,7 @@ public abstract class FileProcessor {
     protected abstract void closeFile();
 
     public final void processFile(Path filePath) {
+        this.filePath = filePath;
         openFile();
         readFile(filePath);
         closeFile();

@@ -8,13 +8,12 @@ public class TemplateDesignPattern {
         jsonFileProcessor.processFile(new File("src/main/resources/jsonFile.json").toPath());
         System.out.println("JSON File Name: " + jsonFileProcessor.getFileName());
         System.out.println("JSON File Size: " + jsonFileProcessor.getFileSize());
-        System.out.println("JSON File Content: " + jsonFileProcessor.getFileContent());
+        System.out.println("JSON File Content: " + jsonFileProcessor.getFileContent() + "\n");
 
-        //TODO: uncomment this after finishing the csv processor
-//        FileProcessor csvFileProcessor = FileProcessor.createFileProcessor(FileExtension.CSV);
-//        csvFileProcessor.processFile(new File("src/main/resources/csvFile.csv").toPath());
-//        System.out.println("CSV File Name: " + csvFileProcessor.getFileName());
-//        System.out.println("CSV File Size: " + csvFileProcessor.getFileSize());
-//        System.out.println("CSV File Content: " + csvFileProcessor.getFileContent());
+        FileProcessor csvFileProcessor = FileProcessor.createFileProcessor(FileExtension.CSV);
+        csvFileProcessor.processFile(new File("src/main/resources/csvFile.csv").toPath());
+        System.out.println("CSV File Name: " + csvFileProcessor.getFileName());
+        System.out.println("CSV File Size: " + csvFileProcessor.getFileSize());
+        System.out.println("CSV File Content: " + csvFileProcessor.getFileContent());
     }
 }
