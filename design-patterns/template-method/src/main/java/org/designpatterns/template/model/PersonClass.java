@@ -1,10 +1,10 @@
-package org.template.model;
+package org.designpatterns.template.model;
 
 import com.opencsv.bean.CsvBindByName;
 import com.opencsv.bean.CsvCustomBindByName;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.template.LocalDateConverter;
+import org.designpatterns.template.LocalDateConverter;
 
 import java.time.LocalDate;
 

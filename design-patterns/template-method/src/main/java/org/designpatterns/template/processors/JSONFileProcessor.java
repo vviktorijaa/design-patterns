@@ -1,10 +1,10 @@
-package org.template.processors;
+package org.designpatterns.template.processors;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.template.FileExtension;
-import org.template.FileProcessor;
-import org.template.JsonObjectMapperConfigurator;
-import org.template.model.FileContent;
+import org.designpatterns.template.FileExtension;
+import org.designpatterns.template.FileProcessor;
+import org.designpatterns.template.JsonObjectMapperConfigurator;
+import org.designpatterns.template.model.FileContent;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.template.model;
+package org.designpatterns.template.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

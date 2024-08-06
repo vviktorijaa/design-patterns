@@ -1,9 +1,9 @@
-package org.template.processors;
+package org.designpatterns.template.processors;
 
 import com.opencsv.bean.CsvToBeanBuilder;
-import org.template.FileProcessor;
-import org.template.model.FileContent;
-import org.template.model.PersonClass;
+import org.designpatterns.template.FileProcessor;
+import org.designpatterns.template.model.FileContent;
+import org.designpatterns.template.model.PersonClass;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.template;
+package org.designpatterns.template;
 
 public enum FileExtension {
     JSON, CSV

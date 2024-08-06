@@ -1,4 +1,4 @@
-package org.template;
+package org.designpatterns.template;
 
 import com.opencsv.bean.AbstractBeanField;
 import com.opencsv.exceptions.CsvDataTypeMismatchException;

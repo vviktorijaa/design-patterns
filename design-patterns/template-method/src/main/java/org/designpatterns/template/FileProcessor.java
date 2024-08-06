@@ -1,8 +1,8 @@
-package org.template;
+package org.designpatterns.template;
 
-import org.template.model.FileContent;
-import org.template.processors.CSVFileProcessor;
-import org.template.processors.JSONFileProcessor;
+import org.designpatterns.template.model.FileContent;
+import org.designpatterns.template.processors.CSVFileProcessor;
+import org.designpatterns.template.processors.JSONFileProcessor;
 
 import java.nio.file.Path;
 
